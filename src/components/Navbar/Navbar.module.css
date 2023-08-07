@@ -1,0 +1,116 @@
+.containerHeader {
+    z-index: 999;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.oddy {
+    color: var(--green);
+    font-weight: var(--bold);
+    font-size: var(--info-text);
+    text-transform: uppercase;
+}
+
+
+.containerButtons {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+}
+
+.containerButton {
+    color: var(--white);
+    font-size: var(--navbar-text);
+    text-transform: uppercase;
+}
+
+
+/* DESKTOP */
+@media(min-width: 1300px) {
+    .containerHeader {
+        background-color: rgba(0, 0, 0, 0.85);
+        transition-duration: .5s;
+        position: fixed;
+    }
+
+    .containerHeader:hover {
+        background-color: var(--black);
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        transition-duration: .5s;
+    }
+
+    .oddy {
+        color: var(--white);
+        transition-duration: .5s;
+    }
+
+    .oddy:hover {
+        color: var(--green);
+    }
+
+    .containerButton, a {
+        color: var(--gray);
+        transition-duration: .5s;
+        text-transform: capitalize;
+    }
+
+    .containerButton:hover, a:hover {
+        color: var(--white);
+    }
+
+    .animatedLine {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        left: -1000px;
+        width: 800px;
+        margin: 0;
+        border-bottom: var(--white) 2px solid;
+        transition-duration: .5s;
+        animation-name: showLine;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
+    .containerHeader:hover > .animatedLine {
+        transition-duration: none;
+        opacity: 1;
+    
+    }
+    
+    @keyframes showLine {
+        0% {
+            transform: translateX(-1000);
+            border-bottom: var(--white) 2px solid;
+        }50% {
+            transform: translateX(3200px);
+            border-bottom: var(--green) 2px solid;
+        }100% {
+            transform: translateX(-1000);
+            border-bottom: var(--white) 2px solid;
+        }
+    }
+    
+}

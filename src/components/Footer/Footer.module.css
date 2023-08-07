@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.git {
+    font-size: var(--GIT-text);
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contactBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.contactBtnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 106px;
+    transition-duration: .3s;
+}
+
+.contactBtnContainer:first-child {
+    width: 85px;
+}
+
+.contactBtnContainer:last-child {
+    width: 130px;
+}
+
+.contact {
+    display: flex;
+    text-decoration: none;
+    font-size: var(--navbar-text);
+    padding: 0 1rem;
+}
+
+.contactText {
+    font-size: var(--info-text);
+}
+
+.icon {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0;
+}
+
+
+.github {
+    background-color: white;
+    border-radius: 60%;
+}
+
+@media(min-width: 680px) {
+    .contactBar {
+        justify-content: right;
+    }
+
+    .contact {
+        font-size: var(--info-text);
+    }
+}
+
+@media(min-width: 1300px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .git {
+        margin-left: 2rem;
+    }
+
+    .contact:hover {
+        cursor: pointer;
+        transition-duration: .3s;
+        color: var(--white);
+    }
+
+    .contactBtnContainer:hover {
+        overflow: none;
+        width: 150px;
+    }
+    
+    .contactBtnContainer:first-child:hover {
+        width: 130px;
+    }
+    
+    .contactBtnContainer:last-child:hover {
+        width: 170px;
+    }
+    
+}

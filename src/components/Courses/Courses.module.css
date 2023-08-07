@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--title-text);
+    font-weight: var(--bold);
+    color: var(--green);
+}
+
+/* TABLET 680 += */
+@media(min-width: 680px) {
+    .title {
+        text-align: justify;
+        text-transform: capitalize;
+    }
+}

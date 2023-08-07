@@ -1,0 +1,480 @@
+.container {
+    margin: 4rem auto;
+    margin-bottom: 47rem;
+    padding: 0;
+    pointer-events: none;
+    transform: translateX(-50%);
+}
+
+.title {
+    align-items: center;
+    font-size: var(--title-text);
+    color: var(--green);
+    text-align: center;
+    transform: translateX(50%);
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200%;
+    margin: -8rem auto;
+    position: absolute;
+    animation-name: spintat;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+
+}
+
+@keyframes spintat {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.greenRings {
+    width: 99%;
+    padding: 2rem;
+}
+
+.group {
+    width: 6%;
+    position: absolute;
+}
+
+.group, .sass {
+    animation-name: spinicon;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+}
+
+
+
+@keyframes spinicon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.apollo {
+    top: 24.2%;
+    left: 26.8%
+}
+
+.expressJs {
+    top: 35.5%;
+    left: 43.5%;
+}
+
+.graphQl {
+    bottom: 26%;
+    right: 45%
+}
+
+.javascript {
+    right: 9.5%;
+    bottom: 33%;
+}
+
+.javascript2 {
+    bottom: 34%;
+    left: 18.1%;
+}
+
+.mongoDB {
+    top: 36%;
+    left: 8.5%;
+}
+
+.mongoDB2 {
+    top: 17.5%;
+    right: 22%;
+}
+
+.mongoDB3 {
+    bottom: 37%;
+    left: 39.2%;
+}
+
+.next {
+    bottom: 40%;
+    right: 35.7%;
+}
+
+.nodeJs {
+    bottom: 10.6%;
+    right: 35%;
+}
+
+.nodeJs2 {
+    top: 43%;
+    left: 25.8%;
+}
+
+.postman {
+    top: 17.4%;
+    right: 43%;
+}
+
+.postman2 {
+    bottom: 18%;
+    left: 21.4%;
+}
+
+.react {
+    width: 8%;
+    position: absolute;
+}
+
+.sass {
+    width: 7%;
+    position: absolute;
+    top: 31%;
+    right: 34.3%;
+}
+
+.strapi {
+    right: 16%;
+    top: 42%;
+}
+
+.styledComponents {
+    bottom: 28.2%;
+    right: 23%;
+}
+
+.tailwind {
+    top: 11.2%;
+    left: 33%;
+}
+
+.tailwind2 {
+    bottom: 18%;
+    left: 40%;
+}
+
+.greenLight {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+@media(min-width: 450px) {
+    .container {
+        margin-bottom: 50rem;
+    }    
+}
+
+@media(min-width: 500px) {
+    .container {
+        margin-bottom: 55rem;
+    }    
+}
+
+
+@media(min-width: 540px) {
+    @media(min-width: 450px) {
+        .container {
+            margin-bottom: 60rem;
+        }    
+    }
+    
+
+    .tailwind {
+        top: 11%;
+    }
+    
+    .tailwind2 {
+        bottom: 17.5%;
+    }
+
+    .sass {
+        top: 30.5%;
+    }
+        
+    .styledComponents {
+        bottom: 29.5%;
+    }
+    
+}
+
+@media(min-width: 600px) {
+    .container {
+        margin-bottom: 67rem;
+    }    
+}
+
+@media(min-width: 610px) {
+    .styledComponents {
+        bottom: 29%;
+    }
+
+    .strapi {
+        right: 16%;
+        top: 41%;
+    }
+
+    .tailwind {
+        top: 10.6%;
+    }
+    
+    .tailwind2 {
+        bottom: 17.5%;
+    }
+
+    
+}
+
+@media(min-width: 650px) {
+    .container {
+        margin-bottom: 70rem;
+    }    
+}
+
+/* TABLET 680px */
+@media(min-width: 680px){
+    .container {
+        padding: 0 2rem 0 2rem;
+        transform: none;
+        margin-bottom: 9rem;
+    }
+    .title {
+        text-align: left;
+        transform: none;
+    }
+    .imageContainer {
+        width: 100%;
+        position: relative;
+        margin: -8rem auto;
+    }    
+    .group {
+        width: 7%;
+    }
+
+    .mongoDB {
+        left: 7.5%;
+    }
+
+    .nodeJs {
+        bottom: 11.3%;
+    }
+    
+    .nodeJs2 {
+        left: 25%;
+    }
+    
+    .postman {
+        top: 18%;
+    }
+    
+    .tailwind {
+        top: 12%;
+    }
+    
+    .tailwind2 {
+        bottom: 18.4%;
+    }
+    
+    .styledComponents {
+        bottom: 27.4%;
+    }
+    
+}
+
+@media(min-width: 900px){
+
+    .tailwind {
+        top: 11%;
+    }
+    
+    .tailwind2 {
+        bottom: 17.8%;
+    }
+
+    .mongoDB2 {
+        right: 21%;
+    }
+    
+    .sass {
+        top: 29.7%;
+    }
+
+    .nodeJs {
+        bottom: 10.3%;
+    }
+
+
+}
+
+@media(min-width: 1100px){
+    .apollo {
+        top: 23%;
+    }
+
+    .expressJs {
+        top: 34.8%;
+    }
+
+    .graphQl {
+        bottom: 25.2%;
+    }
+
+    .mongoDB3 {
+        left: 38.3%;
+    }
+
+    .nodeJs {
+        bottom: 10%;
+    }
+
+    .postman {
+        top: 16.6%;
+    }
+    
+    .postman2 {
+        bottom: 17%;
+    }
+
+    .sass {
+        top: 29%;
+    }
+
+    .tailwind {
+        top: 10.3%;
+    }
+    
+    .tailwind2 {
+        bottom: 17%;    }    
+    }
+
+@media(min-width: 1300px) {
+    .group {
+        width: 4.5%;
+    }
+
+    .apollo {
+        top: 24.3%;
+    }
+
+    .expressJs {
+        top: 35.5%;
+    }
+    
+    .graphQl {
+        bottom: 26%;
+    }
+
+    .javascript {
+        right: 10%;
+    }
+
+    .javascript2 {
+        left: 19%;
+    }
+
+    .mongoDB {
+        left: 9%;
+    }
+    
+    .mongoDB2 {
+        top: 18.7%;
+    }
+    
+    .mongoDB3 {
+        bottom: 39%;
+    }
+
+    .next {
+        bottom: 41%;
+        right: 36.3%;
+    }
+
+    .nodeJs {
+        bottom: 11%;
+    }
+    
+    .nodeJs2 {
+        top: 43%;
+        left: 25.8%;
+    }
+
+    .postman {
+        top: 17.8%;
+    }
+    
+    .postman2 {
+        bottom: 18.3%;
+    }
+    
+    .strapi {
+        right: 16.7%;
+        top: 42%;
+    }
+    
+    .styledComponents {
+        right: 24.5%;
+    }
+
+    .tailwind {
+        top: 11.6%;
+    }
+    
+    .tailwind2 {
+        bottom: 18.2%;
+    }
+}
+
+@media(min-width: 1700px) {
+    .javascript {
+        right: 11%;
+    }
+    
+    .javascript2 {
+        left: 20%;
+    }
+
+    .mongoDB {
+        left: 10%;
+    }
+    
+    .nodeJs {
+        bottom: 10.3%;
+    }
+    
+    .nodeJs2 {
+        left: 26.6%;
+    }
+    
+    .postman {
+        top: 17%;
+    }
+    
+    .postman2 {
+        bottom: 18.5%;
+    }
+    
+    .strapi {
+        right: 17.7%;
+    }
+
+    .tailwind {
+        top: 11%;
+    }
+    
+    .tailwind2 {
+        bottom: 17.7%;
+    }    
+}

@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 2rem 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.greenLight {
+    position: absolute;
+    width: 200%;
+    opacity: .5;
+    z-index: -1;
+}
+
+.containerText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.greenText {
+    font-size: var(--title-text);
+    font-weight: var(--bold);
+    color: var(--green);
+    width: 100%;
+}
+
+.whiteText {
+    font-size: var(--info-text);
+    font-weight: var(--light);
+    width: 100%;
+}
+
+.modalContainer {
+    position: relative;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.refImage {
+    margin: 2rem auto;
+    cursor: pointer;
+    width: 100%;
+    transform: scale(.98);
+    transition: .3s;
+
+}
+
+.refImage:hover {
+    transform: scale(1);
+    filter: brightness(60%) blur(1px);
+}
+
+.textModal {
+    font-size: var(--title-text);
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 20px));
+    z-index: 1;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.refImage:hover + .textModal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.lastText {
+    display: flex;
+    text-align: justify;
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--green);
+    color: var(--black);
+    font-weight: var(bold);
+    margin-top: -80px;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.lastText:hover {
+    width: 95%;
+}
+
+/* TABLET 680px */
+@media(min-width: 680px) {
+    .containerText {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .greenText {
+        width: 70%;
+    }
+
+    .whiteText {
+        width: 30%;
+    }
+
+    .lastText {
+        width: 50%;
+    }
+
+    .lastText:hover {
+        width: 90%;
+    }
+}
+
+/* DESKTOP 1300px */
+@media(min-width: 1300px) {
+
+    .container {
+        margin: 6rem 2rem 0 2rem;
+    }
+    .lastText {
+        width: 30%;
+    }
+
+    .lastText:hover {
+        width: 50%;
+        cursor: auto;
+    }
+}

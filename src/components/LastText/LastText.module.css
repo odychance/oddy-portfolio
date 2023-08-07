@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+.greenText {
+    color: var(--green);
+    font-size: var(--info-text);
+}
+
+.whiteText {
+    color: var(--white);
+    font-size: var(--title-text);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.greenPoint {
+    position: absolute;
+    animation-name: spinback;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: all;
+}
+
+@keyframes spinback {
+    0% {
+        transform: rotate(0deg);
+        transition: all;
+    }
+    50% {
+        transform: rotate(260deg);
+        transition: all;
+    }
+    100% {
+        transform: rotate(360deg);
+        transition: all;
+    }
+}
+
+.greenLight {
+    position: absolute;
+    width: 90%;
+    opacity: .5;
+    z-index: -2;
+}
+
+@media(min-width: 680px) {
+    .container {
+        width: 65%;
+    }
+
+    .whiteText {
+        text-align: left;
+    }    
+}

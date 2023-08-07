@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--title-text);
+    font-weight: var(--bold);
+    color: var(--green);
+}
+
+.projects {
+    cursor: pointer;
+}
+
+.containerProject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    
+    :hover {
+        
+        .domainImg {
+            filter: none;
+        }
+
+    }
+}
+
+
+.linkDomain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 20px;
+    background-color: var(--green);
+    border-radius: 20px;
+    
+    > h2 {
+        color: var(--black);
+        font-size: 20px;
+    }
+}
+
+.domainImg {
+    filter: brightness(60%) blur(1px);
+    transition-duration: .3s;
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* TABLET 680 += */
+@media(min-width: 680px) {
+    .title {
+        text-align: justify;
+        text-transform: capitalize;
+    }
+}

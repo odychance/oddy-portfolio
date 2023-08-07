@@ -1,0 +1,15 @@
+:root {
+    --min-text: 14px;
+    --mid-text: 16px;
+
+    --navbar-text: 18px;
+    --info-text: 24px;
+    --title-text: 48px;
+    
+    --SD-text: 120px;
+    --GIT-text: 80px;
+
+    --bold: 900;
+    --light: 300;
+
+}
