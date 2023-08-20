@@ -16,10 +16,15 @@
             "imageCourse" : "https://res.cloudinary.com/practicaldev/image/fetch/s--BMWspgKL--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ds4yi6va1jyjhyfroddl.png"
         },
         {
+            "name" : "Next JS: Crea tu tienda online completa",
+            "status" : "Finished",
+            "imageCourse" : "https://blog.logrocket.com/wp-content/uploads/2023/03/biggest-next-js-boilerplates-2023.png"
+        } ,   
+        {
             "name" : "React Native - Crea aplicaciones para Android y iOS c/ React",
             "status" : "Soon",
             "imageCourse" : "https://www.imarkinfotech.com/wp-content/uploads/2019/07/react-blog-img.png"
-        }    
+        }
     ] 
 
 }

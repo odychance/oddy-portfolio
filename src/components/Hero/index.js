@@ -1,6 +1,8 @@
 import React from 'react'
 import './Hero.modules.css'
-import example from "Media/Images/iexample1.png"
+import example from "Media/Images/iexample4.jpeg"
+import OddyPerfil from "Media/Images/OddyPerfil.png"
+
 import DownScroll from './DownScroll'
 
 const Index = () => {
@@ -9,12 +11,16 @@ const Index = () => {
         <div className='leftContainer'>
             <div className='textContainer'>
                 <div className='sdContainer'> <p className='soft'>Software</p> <p className='dev'>Developer</p></div>
-                <div className='infoContainer'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div className='infoContainer'>My path within the programming area began in 2020, driven by my brother's guidance, my first steps were hesitant, but with determination and valuable help I began to find my way.</div>
                 <DownScroll />
             </div>
         </div>
 
-        <img className="image1" alt="Example1" src={example} />
+        <div className='containerImage'>
+          <img className="image1" alt="Example1" src={OddyPerfil} />
+          {/* <img className="oddyfoto" alt="oddy Foto" src={OddyPerfil} /> */}
+
+        </div>
     </div>
   )
 }

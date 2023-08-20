@@ -7,8 +7,8 @@ const Index = () => {
   return (
     <div className={styles.container}>
         <div className={styles.textContainer}>
-            <p className={styles.greenText}>Lorem ipsum dolor</p>
-            <p className={styles.whiteText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className={styles.greenText}>About my language knowledge.</p>
+            <p className={styles.whiteText}>I have a B2 Upper Intermediate level of English, so I don't have major problems communicating orally or in writing.</p>
         </div>
         <div className={styles.imgContainer}>
             <img className={styles.greenPoint} src={greenPoint} alt='greenPoint' />

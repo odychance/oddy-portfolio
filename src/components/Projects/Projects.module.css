@@ -62,3 +62,22 @@
         text-transform: capitalize;
     }
 }
+
+
+/* DESKTOP 1300 */
+@media(min-width: 1300px) {
+    .projects {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 22rem;
+        grid-template-columns: repeat(auto-fill, minmax( 30rem, 1fr));
+    }
+
+    .containerProject {
+        margin: 0;
+    }
+
+    .linkDomain {
+        border-radius: 5px;
+    }
+}

@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+    padding-top: 100px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -44,11 +45,31 @@ p {
     margin: 1rem auto 4rem;
 }
 
-.image1{
+.containerImage {
+    position: relative;
     z-index: -1;
     width: 100%;
-    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1{
+    z-index: -1;
+    width: 800px;
+    max-width: 100%;
+    object-fit: cover;
+    height: 560px;
     margin-top: -7rem;
+}
+
+.oddyfoto {
+    position: absolute;
+    top: -5%;
+    left: 30%;
+    border-radius: 50%;
+    width: 30%;
+    border: solid 1px var(--green);
 }
 
 

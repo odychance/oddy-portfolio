@@ -62,13 +62,13 @@
     
     .container {
         flex-direction: row;
-        padding: 1rem;
-        margin: 0;
+        padding: 3rem;
+        margin: 1rem 0;
     }
 
     .text {
-        color: var(--gray);
-        font-weight: var(--light);
+        color: var(--white);
+        font-weight: var(--bold);
         text-align: left;
         font-size: var(--info-text);
         margin: 0;
@@ -79,22 +79,51 @@
     }
     
     .imageCourse {
-        opacity: 0;
+        opacity: .3;
         transition: .3s;
         height: 100%;
     }
     
-    .container:hover .imageCourse {
-        opacity: .3;
+    
+}
+
+@media(min-width: 1300px) {
+    .container .imageCourse {
+        opacity: 0;
     }
 
-    .container:hover {
+    .container {
         height: 100px;
         padding: 1rem 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding-bottom: 0; */
+        /* background-color: red; */
     }
     
-    .container:hover .text {
-        color: var(--white);
+    .imageCourse {
+        opacity: 0;
+        margin-bottom: 1rem;
     }
-    
+
+    .text {
+        color: var(--gray);
+    }
+
+
+    .container:hover {
+        height: 150px;
+        padding: 1rem 3rem;
+        /* background-color: red; */
+        
+        > .imageCourse {
+            opacity: .6;
+            padding-bottom: 1rem;
+        }
+
+        > .text {
+            color: var(--white);
+        }
+    }
 }

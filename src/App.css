@@ -9,7 +9,7 @@
 
 body {
     background-color: var(--background-primary);
-    cursor: none;
+    cursor:none;
     overflow-x: hidden;
 }
 

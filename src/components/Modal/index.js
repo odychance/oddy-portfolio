@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import styles from './Modal.module.css'
-import profilePhoto from 'Media/Images/profilePhoto.png'
+import OddyPerfil from 'Media/Images/OddyPerfil.png'
 import OddyChance2 from 'Media/Images/OddyChance2.png'
 import video from 'Media/Video/video.mp4'
 
@@ -25,7 +25,7 @@ const Index = ({ showModal, setShowModal }) => {
         
         <div className={styles.container}>
 
-            <img src={profilePhoto} alt='profile photo' className={styles.photo} />
+            <img src={OddyPerfil} alt='profile photo' className={styles.photo} />
 
             <div className={styles.containerTop}>
                 <div className={styles.containerInfo}>
@@ -49,8 +49,8 @@ const Index = ({ showModal, setShowModal }) => {
 
                 <div className={styles.containerEnd} >
                     <div className={styles.containerInfoText} >
-                        <p className={styles.endingInfo}> Skills</p>
-                        <p className={styles.endingInfo2}> consectetur adipisicing elit. Est ab eveniet labore officia eum ducimus soluta quae nam facere minima</p>
+                        <p className={styles.endingInfo}> SKILLS</p>
+                        <p className={styles.endingInfo2}> Frontend | Fullstack Developer | Reactjs | Nextjs | Nodejs | MongoDB | GraphQL</p>
                     </div>
                 </div>
             </div>
