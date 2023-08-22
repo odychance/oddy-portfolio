@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    margin: 200px 0;
+    margin: 0 0 200px 0;
 }
 
 .title {
@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .containerProject:hover .domainImg {
@@ -64,6 +65,7 @@
 
     .containerProject {
         min-width: 350px;
+        margin-bottom:0;
     }
 }
 
