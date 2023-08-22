@@ -12,9 +12,11 @@ const index = () => {
                 <div
                 className={styles.container}
                 key={index}>
-                    <p className={styles.text}>{item.name}</p>
-                    <p className={styles.text}>{item.status}</p>
-                    <img className={styles.imageCourse} src={item.imageCourse} alt='telative image' />
+                    <a href={item.urlCourse} className={styles.alink} target='_blank'>
+                        <p className={styles.text}>{item.name}</p>
+                        <p className={styles.text}>{item.status}</p>
+                        <img className={styles.imageCourse} src={item.imageCourse} alt='telative image' />
+                    </a>
                 </div>
             )
         })}
