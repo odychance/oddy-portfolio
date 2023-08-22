@@ -53,7 +53,7 @@ const Index = () => {
 
         {projectsArr.map( project => (
           <div key={project.id} className={styles.containerProject} >
-            <a href={`${project.domain}`} className={styles.linkDomain} target='_blank'>
+            <a href={`${project.domain}`} className={styles.linkDomain} target='_blank' rel="noreferrer">
               <img src={project.image} alt='imageDomain' className={styles.domainImg}/>
               <h2>{project.name.toUpperCase()}</h2>
             </a>

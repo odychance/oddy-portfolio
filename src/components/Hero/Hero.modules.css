@@ -55,6 +55,7 @@ p {
 }
 
 .image1{
+    pointer-events: none;
     z-index: -1;
     width: 800px;
     max-width: 100%;

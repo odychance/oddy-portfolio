@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.modules.css'
-import example from "Media/Images/iexample4.jpeg"
+// import example from "Media/Images/iexample4.jpeg"
 import OddyPerfil from "Media/Images/OddyPerfil.png"
 
 import DownScroll from './DownScroll'

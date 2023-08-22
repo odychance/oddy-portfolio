@@ -12,10 +12,10 @@ const index = () => {
                 <div
                 className={styles.container}
                 key={index}>
-                    <a href={item.urlCourse} className={styles.alink} target='_blank'>
+                    <a href={item.urlCourse} className={styles.alink} target='_blank' rel="noreferrer">
                         <p className={styles.text}>{item.name}</p>
                         <p className={styles.text}>{item.status}</p>
-                        <img className={styles.imageCourse} src={item.imageCourse} alt='telative image' />
+                        <img className={styles.imageCourse} src={item.imageCourse} alt='telative' />
                     </a>
                 </div>
             )
