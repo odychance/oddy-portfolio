@@ -112,6 +112,7 @@
         height: 100%;
         align-items: center;
         justify-content: space-between;
+        margin: 0 20px;
     }
 
     .imageCourse {
@@ -130,6 +131,10 @@
         height: 150px;
         /* padding: 1rem 3rem; */
         
+    }
+
+    .container:hover .alink {
+        margin: 0 40px;
     }
 
     .container:hover .imageCourse {
