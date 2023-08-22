@@ -30,7 +30,7 @@ const Index = ({ showModal, setShowModal }) => {
             <div className={styles.containerTop}>
                 <div className={styles.containerInfo}>
                     <h1 className={styles.headerText}> ODDY CHANCE </h1>
-                    <p className={styles.infoMe}> Software developer Jr. ready for every challenge. </p>
+                    <p className={styles.infoMe}> i'm ready for every challenge. </p>
                     <div className={styles.buttonsContact} >
                         <button className={styles.buttonContact}>   
                             <Link to="contact" spy={true} smooth={true} offset={-100} duration={500}  onClick={setShowModal}>CONTACT</Link>
