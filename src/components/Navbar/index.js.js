@@ -9,6 +9,9 @@ const Header = () => {
           <div className={styles.oddy} >Oddy Chance</div>
 
           <ul className={styles.containerButtons}>
+              <button className={styles.containerButton}>
+                <a href="/cv.pdf" download>Download CV</a>
+              </button>
               <li className={styles.containerButton}>
                 <Link to="home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
               </li>

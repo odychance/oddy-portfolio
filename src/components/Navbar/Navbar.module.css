@@ -33,6 +33,21 @@ a {
     list-style: none;
     gap: 1rem;
     padding: 0;
+
+    > button {
+        background-color: transparent;
+        border: none;
+        text-transform:none;
+
+        &:hover {
+            background-color: var(--green);
+            border-radius: 15px;
+            
+            > a {
+                color: #000000;
+            }
+        }
+    }
 }
 
 .containerButton {
